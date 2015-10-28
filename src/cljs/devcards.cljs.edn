@@ -1,0 +1,2 @@
+{:require  [carder-devcards.core]
+ :compiler-options {:devcards true}}
