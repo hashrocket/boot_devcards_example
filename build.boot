@@ -4,9 +4,9 @@
   :dependencies '[[org.clojure/clojure    "1.7.0"      :scope "provided"]
                   [boot/core              "2.4.2"      :scope "test"]
 
+                  [org.clojure/clojurescript  "1.7.145"    :scope "test"]
                   [adzerk/boot-cljs           "1.7.48-6"   :scope "test"]
                   [adzerk/boot-cljs-repl      "0.2.0"      :scope "test"]
-                  [org.clojure/clojurescript  "1.7.145"    :scope "test"]
                   [adzerk/boot-reload         "0.4.1"      :scope "test"]
                   [adzerk/boot-test           "1.0.4"      :scope "test"]
                   [pandeiro/boot-http         "0.7.0"      :scope "test"]
