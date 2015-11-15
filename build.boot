@@ -14,7 +14,7 @@
                   [pandeiro/boot-http "0.7.0"]
                   [sablono "0.4.0"]
                   [devcards "0.2.1"]
-                  [reagent "0.5.1"]
+                  [org.omcljs/om "1.0.0-alpha22" :exclusions [org.clojure/clojure]]
                   ])
 
 (require
