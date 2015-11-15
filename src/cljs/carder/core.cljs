@@ -6,6 +6,6 @@
 
 (enable-console-print!)
 
-(defn main []
+(defn ^:export main []
   (if-let [node (.getElementById js/document "main-app-area")]
     (js/React.render (sab/html [:div "This is working"]) node)))

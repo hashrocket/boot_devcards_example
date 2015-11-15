@@ -1,12 +1,10 @@
 (ns carder-devcards.core
   (:require [devcards.core :as dc :include-macros true]
             [carder.core :as carder]
-            [reagent.core :as reagent]
             [sablono.core :as sab :include-macros true])
-  (:require-macros [devcards.core :refer [defcard defcard-rg]]))
+  (:require-macros [devcards.core :refer [defcard]]))
 
 (enable-console-print!)
-(dc/start-devcard-ui!)
 
 (defn on-click [ratom]
   (swap! ratom update-in [:count] inc))
@@ -37,12 +35,6 @@
    [:div [:button {:on-click #(on-click ratom)}
           button-text]]])
 
-(defcard-rg reagent-counter
-  "## Isolating state
-  From reagent
-  "
-  (fn [data-atom _]
-    [counter4 data-atom {:title "HELLO"
-                         :button-text "increment isolated state"}])
-  (reagent/atom {:count 0})
-  {:inspect-data true})
+(defn main []
+  (dc/start-devcard-ui!))
+

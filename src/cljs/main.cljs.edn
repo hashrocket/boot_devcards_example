@@ -1,1 +1,2 @@
-{:require  [carder.core]}
+{:require  [carder.core]
+ :init-fns [carder.core/main]}

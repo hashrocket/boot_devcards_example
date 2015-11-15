@@ -1,2 +1,3 @@
 {:require  [carder-devcards.core]
- :compiler-options {:devcards true}}
+ :compiler-options {:devcards true}
+ :init-fns [carder-devcards.core/main]}
