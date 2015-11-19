@@ -39,7 +39,8 @@
    p port       PORT int  "Port for web server"]
   (comp
     (watch)
-    (reload :open-file "vim --servername saapas --remote-silent +norm%sG%s| %s")
+    (reload :open-file "vim --servername saapas --remote-silent +norm%sG%s| %s"
+            :on-jsload 'carder.core/main)
     (cljs-repl)
     (cljs :compiler-options {:devcards true})
     (serve :port port, :dir "target")
